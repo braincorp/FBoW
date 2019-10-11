@@ -85,7 +85,7 @@ option(INSTALL_FBOW_DEV "Set to OFF to disable source installation" ON)
 #   find dependencies
 # ------------------------------------------------------
 
-find_package(OpenCV 3.0 REQUIRED)
+find_package(OpenCV 3.0 REQUIRED HINTS /opt/ros/kinetic)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 if(USE_CONTRIB)
